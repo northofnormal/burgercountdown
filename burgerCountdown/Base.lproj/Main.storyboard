@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="burgerCountdown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheeseburger Countdown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYU-Wf-6fl">
+                                <rect key="frame" x="10" y="70" width="355" height="29.5"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍔" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJu-GG-6Qu">
+                                <rect key="frame" x="50" y="149.5" width="275" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are n burgers left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tB-8T-qbI">
+                                <rect key="frame" x="50" y="554.5" width="275" height="62.5"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h20-xU-bJx">
+                                <rect key="frame" x="50" y="220" width="275" height="35"/>
+                                <color key="backgroundColor" red="0.83284121749999995" green="0.1234190241" blue="0.1628118157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="18"/>
+                                <state key="normal" title="Sell a cheeseburger">
+                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="decrementNumberOfBurgers" destination="BYZ-38-t0r" eventType="touchUpInside" id="675-1Z-RT3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1tB-8T-qbI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="3QF-1b-xZR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1tB-8T-qbI" secondAttribute="trailing" constant="50" id="AR3-ks-jqg"/>
+                            <constraint firstItem="xJu-GG-6Qu" firstAttribute="top" secondItem="wYU-Wf-6fl" secondAttribute="bottom" constant="50" id="Bq1-yA-bQg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h20-xU-bJx" secondAttribute="trailing" constant="50" id="Cdz-DF-L43"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1tB-8T-qbI" secondAttribute="bottom" constant="50" id="HJc-DK-sIF"/>
+                            <constraint firstItem="xJu-GG-6Qu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ILQ-ax-bQH"/>
+                            <constraint firstItem="h20-xU-bJx" firstAttribute="top" secondItem="xJu-GG-6Qu" secondAttribute="bottom" constant="50" id="Ztv-vh-GKr"/>
+                            <constraint firstItem="wYU-Wf-6fl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="fyr-Ok-een"/>
+                            <constraint firstItem="h20-xU-bJx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="olj-Gf-H3k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xJu-GG-6Qu" secondAttribute="trailing" constant="50" id="sZU-xn-CCm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wYU-Wf-6fl" secondAttribute="trailing" constant="10" id="u4X-zg-ZKV"/>
+                            <constraint firstItem="wYU-Wf-6fl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xqX-fi-7Eu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="burgerCountLabel" destination="1tB-8T-qbI" id="iP2-P1-AsT"/>
+                        <outlet property="burgerEmojiLabel" destination="xJu-GG-6Qu" id="y8V-Og-A2h"/>
+                        <outlet property="sellABurgerButton" destination="h20-xU-bJx" id="tOJ-aD-kFH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
